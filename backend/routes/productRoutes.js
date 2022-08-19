@@ -11,6 +11,8 @@ router.get(
   "/",
   asyncHandler(async (req, res) => {
     const products = await Product.find({});
+    // Error handling:
+    // throw new Error("Some error here");
     res.json(products);
   })
 );
