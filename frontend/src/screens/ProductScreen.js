@@ -14,7 +14,7 @@ const ProductScreen = () => {
       setPokeData(data);
     };
     fetchProduct();
-  }, []);
+  }, [id]);
 
   return (
     <>
@@ -23,7 +23,7 @@ const ProductScreen = () => {
       </Link>
       <Row>
         <Col md={6}>
-          <Image src={pokeData.imageUrl} alt={pokeData.name} fluid />
+          <Image src={pokeData.image} alt={pokeData.name} fluid />
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">

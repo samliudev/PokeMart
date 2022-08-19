@@ -2,10 +2,10 @@
 // Math.floor(Math.random() * (5 - 3.9) + 3.9)
 const pokemonArr = [
   {
-    _id: 1,
+
     name: "Bulbasaur",
     type: "Grass, Poison",
-    imageUrl: "https://i.imgur.com/VN6df4o.jpeg",
+    image: "https://i.imgur.com/VN6df4o.jpeg",
     price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
     description:
       "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
@@ -14,10 +14,10 @@ const pokemonArr = [
     numReviews: Math.ceil(Math.random() * 20),
   },
   {
-    _id: 2,
+
     name: "Ivysaur",
     type: "Grass, Poison",
-    imageUrl: "https://i.imgur.com/gktbDGb.jpeg",
+    image: "https://i.imgur.com/gktbDGb.jpeg",
     price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
     description:
       "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
@@ -26,10 +26,10 @@ const pokemonArr = [
     numReviews: Math.ceil(Math.random() * 20),
   },
   {
-    _id: 3,
+
     name: "Venusaur",
     type: "Grass, Poison",
-    imageUrl: "https://i.imgur.com/0liEa8F.jpeg",
+    image: "https://i.imgur.com/0liEa8F.jpeg",
     price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
     description:
       "Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
@@ -38,10 +38,10 @@ const pokemonArr = [
     numReviews: Math.ceil(Math.random() * 20),
   },
   // {
-  //   _id: 4,
-  //   name: "Charmander",
+  //
+   //   name: "Charmander",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/HOjIuKA.jpeg",
+  //   image: "https://i.imgur.com/HOjIuKA.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
@@ -50,10 +50,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 5,
-  //   name: "Charmeleon",
+  //
+   //   name: "Charmeleon",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/kKSB3U3.jpeg",
+  //   image: "https://i.imgur.com/kKSB3U3.jpeg",
   //   description:
   //     "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
@@ -62,10 +62,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 6,
-  //   name: "Charizard",
+  //
+   //   name: "Charizard",
   //   type: "Fire, Flying",
-  //   imageUrl: "https://i.imgur.com/4mI8dBA.jpeg",
+  //   image: "https://i.imgur.com/4mI8dBA.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
@@ -74,10 +74,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 7,
-  //   name: "Squirtle",
+  //
+   //   name: "Squirtle",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/lHHHiNh.jpeg",
+  //   image: "https://i.imgur.com/lHHHiNh.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
@@ -86,10 +86,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 8,
-  //   name: "Wartortle",
+  //
+   //   name: "Wartortle",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/Yd3LVZI.jpeg",
+  //   image: "https://i.imgur.com/Yd3LVZI.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.",
@@ -98,10 +98,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 9,
-  //   name: "Blastoise",
+  //
+   //   name: "Blastoise",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/EXJDRhw.jpeg",
+  //   image: "https://i.imgur.com/EXJDRhw.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.",
@@ -110,10 +110,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 10,
-  //   name: "Caterpie",
+  //
+    //   name: "Caterpie",
   //   type: "Bug",
-  //   imageUrl: "https://i.imgur.com/ZycId9a.jpeg",
+  //   image: "https://i.imgur.com/ZycId9a.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
@@ -122,10 +122,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 11,
-  //   name: "Metapod",
+  //
+    //   name: "Metapod",
   //   type: "Bug",
-  //   imageUrl: "https://i.imgur.com/8drBAVu.jpeg",
+  //   image: "https://i.imgur.com/8drBAVu.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.",
@@ -134,10 +134,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 12,
-  //   name: "Butterfree",
+  //
+    //   name: "Butterfree",
   //   type: "Bug, Flying",
-  //   imageUrl: "https://i.imgur.com/t7oaYHl.jpeg",
+  //   image: "https://i.imgur.com/t7oaYHl.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
@@ -146,10 +146,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 13,
-  //   name: "Weedle",
+  //
+    //   name: "Weedle",
   //   type: "Bug, Poison",
-  //   imageUrl: "https://i.imgur.com/Ff2IPEr.jpeg",
+  //   image: "https://i.imgur.com/Ff2IPEr.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.",
@@ -158,10 +158,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 14,
-  //   name: "Kakuna",
+  //
+    //   name: "Kakuna",
   //   type: "Bug, Poison",
-  //   imageUrl: "https://i.imgur.com/eF5uT9e.jpeg",
+  //   image: "https://i.imgur.com/eF5uT9e.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.",
@@ -170,10 +170,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 15,
-  //   name: "Beedrill",
+  //
+    //   name: "Beedrill",
   //   type: "Bug, Poison",
-  //   imageUrl: "https://i.imgur.com/AwXlJOM.jpeg",
+  //   image: "https://i.imgur.com/AwXlJOM.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
@@ -182,10 +182,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 16,
-  //   name: "Pidgey",
+  //
+    //   name: "Pidgey",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/DyW28fI.jpeg",
+  //   image: "https://i.imgur.com/DyW28fI.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
@@ -194,10 +194,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 17,
-  //   name: "Pidgeotto",
+  //
+    //   name: "Pidgeotto",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/KEWWBDz.jpeg",
+  //   image: "https://i.imgur.com/KEWWBDz.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.",
@@ -206,10 +206,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 18,
-  //   name: "Pidgeot",
+  //
+    //   name: "Pidgeot",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/Isp7ZR8.jpeg",
+  //   image: "https://i.imgur.com/Isp7ZR8.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.",
@@ -218,10 +218,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 19,
-  //   name: "Rattata",
+  //
+    //   name: "Rattata",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/LIe3ZLt.jpeg",
+  //   image: "https://i.imgur.com/LIe3ZLt.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.",
@@ -230,10 +230,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 20,
-  //   name: "Raticate",
+  //
+    //   name: "Raticate",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/Bhf34OF.jpeg",
+  //   image: "https://i.imgur.com/Bhf34OF.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.",
@@ -242,10 +242,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 21,
-  //   name: "Spearow",
+  //
+    //   name: "Spearow",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/pCatj7Z.jpeg",
+  //   image: "https://i.imgur.com/pCatj7Z.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Inept at flying high. However, it can fly around very fast to protect its territory.",
@@ -254,10 +254,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 22,
-  //   name: "Fearow",
+  //
+    //   name: "Fearow",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/C7UwKqL.jpeg",
+  //   image: "https://i.imgur.com/C7UwKqL.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.",
@@ -266,10 +266,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 23,
-  //   name: "Ekans",
+  //
+    //   name: "Ekans",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/nHbxnyS.jpeg",
+  //   image: "https://i.imgur.com/nHbxnyS.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.",
@@ -278,10 +278,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 24,
-  //   name: "Arbok",
+  //
+    //   name: "Arbok",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/aH8PTbs.jpeg",
+  //   image: "https://i.imgur.com/aH8PTbs.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
@@ -290,10 +290,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 25,
-  //   name: "Pikachu",
+  //
+    //   name: "Pikachu",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/4SrGCdX.jpeg",
+  //   image: "https://i.imgur.com/4SrGCdX.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
@@ -302,10 +302,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 26,
-  //   name: "Raichu",
+  //
+    //   name: "Raichu",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/VOc1Gxp.jpeg",
+  //   image: "https://i.imgur.com/VOc1Gxp.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its long tail serves as a ground to protect itself from its own high-voltage power.",
@@ -314,10 +314,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 27,
-  //   name: "Sandshrew",
+  //
+    //   name: "Sandshrew",
   //   type: "Ground",
-  //   imageUrl: "https://i.imgur.com/VhBLL6V.jpeg",
+  //   image: "https://i.imgur.com/VhBLL6V.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.",
@@ -326,10 +326,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 28,
-  //   name: "Sandslash",
+  //
+    //   name: "Sandslash",
   //   type: "Ground",
-  //   imageUrl: "https://i.imgur.com/fFazao0.jpeg",
+  //   image: "https://i.imgur.com/fFazao0.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched.",
@@ -338,10 +338,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 29,
-  //   name: "Nidoran-f",
+  //
+    //   name: "Nidoran-f",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/xXlBKf5.jpeg",
+  //   image: "https://i.imgur.com/xXlBKf5.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.",
@@ -350,10 +350,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 30,
-  //   name: "Nidorina",
+  //
+    //   name: "Nidorina",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/gjHiDlj.jpeg/",
+  //   image: "https://i.imgur.com/gjHiDlj.jpeg/",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.",
@@ -362,10 +362,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 31,
-  //   name: "Nidoqueen",
+  //
+    //   name: "Nidoqueen",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/emaLahw.jpeg",
+  //   image: "https://i.imgur.com/emaLahw.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack.",
@@ -374,10 +374,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 32,
-  //   name: "Nidoran-m",
+  //
+    //   name: "Nidoran-m",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/MyiD3Cm.jpeg",
+  //   image: "https://i.imgur.com/MyiD3Cm.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.",
@@ -386,10 +386,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 33,
-  //   name: "Nidorino",
+  //
+    //   name: "Nidorino",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/Nfb7TGJ.jpeg",
+  //   image: "https://i.imgur.com/Nfb7TGJ.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone.",
@@ -398,10 +398,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 34,
-  //   name: "Nidoking",
+  //
+    //   name: "Nidoking",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/z17kift.jpeg",
+  //   image: "https://i.imgur.com/z17kift.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down.",
@@ -410,10 +410,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 35,
-  //   name: "Clefairy",
+  //
+    //   name: "Clefairy",
   //   type: "Bug",
-  //   imageUrl: "https://i.imgur.com/CQACXLN.jpeg",
+  //   image: "https://i.imgur.com/CQACXLN.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.",
@@ -422,10 +422,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 36,
-  //   name: "Clefable",
+  //
+    //   name: "Clefable",
   //   type: "Fairy",
-  //   imageUrl: "https://i.imgur.com/PKTdqX7.jpeg",
+  //   image: "https://i.imgur.com/PKTdqX7.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.",
@@ -434,10 +434,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 37,
-  //   name: "Vulpix",
+  //
+    //   name: "Vulpix",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/anumWPm.jpeg",
+  //   image: "https://i.imgur.com/anumWPm.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "While young, it has six gorgeous tails. When it grows, several new tails are sprouted.",
@@ -446,10 +446,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 38,
-  //   name: "Ninetales",
+  //
+    //   name: "Ninetales",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/BsiJHcr.jpeg",
+  //   image: "https://i.imgur.com/BsiJHcr.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.",
@@ -458,10 +458,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 39,
-  //   name: "Jigglypuff",
+  //
+    //   name: "Jigglypuff",
   //   type: "Normal, Fairy",
-  //   imageUrl: "https://i.imgur.com/ROrTahE.jpeg",
+  //   image: "https://i.imgur.com/ROrTahE.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep.",
@@ -470,10 +470,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 40,
-  //   name: "Wigglytuff",
+  //
+    //   name: "Wigglytuff",
   //   type: "Normal, Fairy",
-  //   imageUrl: "https://i.imgur.com/jGUNMln.jpeg",
+  //   image: "https://i.imgur.com/jGUNMln.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them.",
@@ -482,10 +482,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 41,
-  //   name: "Zubat",
+  //
+    //   name: "Zubat",
   //   type: "Poison, Flying",
-  //   imageUrl: "https://i.imgur.com/XcE9Yt7.jpeg",
+  //   image: "https://i.imgur.com/XcE9Yt7.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.",
@@ -494,10 +494,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 42,
-  //   name: "Golbat",
+  //
+    //   name: "Golbat",
   //   type: "Poison, Flying",
-  //   imageUrl: "https://i.imgur.com/mQah8G0.jpeg",
+  //   image: "https://i.imgur.com/mQah8G0.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.",
@@ -506,10 +506,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 43,
-  //   name: "Oddish",
+  //
+    //   name: "Oddish",
   //   type: "Grass, Poison",
-  //   imageUrl: "https://i.imgur.com/dehfWs9.jpeg",
+  //   image: "https://i.imgur.com/dehfWs9.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.",
@@ -518,10 +518,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 44,
-  //   name: "Gloom",
+  //
+    //   name: "Gloom",
   //   type: "Grass, Poison",
-  //   imageUrl: "https://i.imgur.com/xCMibYC.jpeg",
+  //   image: "https://i.imgur.com/xCMibYC.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.",
@@ -530,10 +530,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 45,
-  //   name: "Vileplume",
+  //
+    //   name: "Vileplume",
   //   type: "Grass, Poison",
-  //   imageUrl: "https://i.imgur.com/XQKhnhN.jpeg",
+  //   image: "https://i.imgur.com/XQKhnhN.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
@@ -542,10 +542,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 46,
-  //   name: "Paras",
+  //
+    //   name: "Paras",
   //   type: "Bug, Grass",
-  //   imageUrl: "https://i.imgur.com/KurxNRa.jpeg",
+  //   image: "https://i.imgur.com/KurxNRa.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.",
@@ -554,10 +554,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 47,
-  //   name: "Parasect",
+  //
+    //   name: "Parasect",
   //   type: "Bug, Grass",
-  //   imageUrl: "https://i.imgur.com/7PJe4sJ.jpeg",
+  //   image: "https://i.imgur.com/7PJe4sJ.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.",
@@ -566,10 +566,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 48,
-  //   name: "Venonat",
+  //
+    //   name: "Venonat",
   //   type: "Bug, Poison",
-  //   imageUrl: "https://i.imgur.com/9qUyaaX.jpeg",
+  //   image: "https://i.imgur.com/9qUyaaX.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.",
@@ -578,10 +578,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 49,
-  //   name: "Venomoth",
+  //
+    //   name: "Venomoth",
   //   type: "Bug, Poison",
-  //   imageUrl: "https://i.imgur.com/S8AdnGV.jpeg",
+  //   image: "https://i.imgur.com/S8AdnGV.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.",
@@ -590,10 +590,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 50,
-  //   name: "Diglett",
+  //
+    //   name: "Diglett",
   //   type: "Ground",
-  //   imageUrl: "https://i.imgur.com/H56otDx.jpeg",
+  //   image: "https://i.imgur.com/H56otDx.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.",
@@ -602,10 +602,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 51,
-  //   name: "Dugtrio",
+  //
+    //   name: "Dugtrio",
   //   type: "Ground",
-  //   imageUrl: "https://i.imgur.com/EibRcjQ.jpeg",
+  //   image: "https://i.imgur.com/EibRcjQ.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
@@ -614,10 +614,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 52,
-  //   name: "Meowth",
+  //
+    //   name: "Meowth",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/TlPRD2d.jpeg",
+  //   image: "https://i.imgur.com/TlPRD2d.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.",
@@ -626,10 +626,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 53,
-  //   name: "Persian",
+  //
+    //   name: "Persian",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/0DDug1o.jpeg",
+  //   image: "https://i.imgur.com/0DDug1o.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Getting this prideful Pokémon to warm up to you takes a lot of effort, and it will claw at you the moment it gets annoyed.",
@@ -638,10 +638,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 54,
-  //   name: "Psyduck",
+  //
+    //   name: "Psyduck",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/kXfAI8l.jpeg",
+  //   image: "https://i.imgur.com/kXfAI8l.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Psyduck is constantly beset by headaches. If the Pokémon lets its strange power erupt, apparently the pain subsides for a while.",
@@ -650,10 +650,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 55,
-  //   name: "Golduck",
+  //
+    //   name: "Golduck",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/jLQqU7I.jpeg",
+  //   image: "https://i.imgur.com/jLQqU7I.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon lives in gently flowing rivers. It paddles through the water with its long limbs, putting its graceful swimming skills on display.",
@@ -662,10 +662,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 56,
-  //   name: "Mankey",
+  //
+    //   name: "Mankey",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/xhGDYGK.jpeg",
+  //   image: "https://i.imgur.com/xhGDYGK.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything.",
@@ -674,10 +674,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 57,
-  //   name: "Primeape",
+  //
+    //   name: "Primeape",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/hkonqgU.jpeg",
+  //   image: "https://i.imgur.com/hkonqgU.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It stops being angry only when nobody else is around. To view this moment is very difficult.",
@@ -686,10 +686,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 58,
-  //   name: "Growlithe",
+  //
+    //   name: "Growlithe",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/nYfelHI.jpeg",
+  //   image: "https://i.imgur.com/nYfelHI.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
@@ -698,10 +698,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 59,
-  //   name: "Arcanine",
+  //
+    //   name: "Arcanine",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/G5LI3G8.jpeg",
+  //   image: "https://i.imgur.com/G5LI3G8.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The sight of it running over 6,200 miles in a single day and night has captivated many people.",
@@ -710,10 +710,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 60,
-  //   name: "Poliwag",
+  //
+    //   name: "Poliwag",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/PJ1ENgC.jpeg",
+  //   image: "https://i.imgur.com/PJ1ENgC.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "For Poliwag, swimming is easier than walking. The swirl pattern on its belly is actually part of the Pokémon’s innards showing through the skin.",
@@ -722,10 +722,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 61,
-  //   name: "Poliwhirl",
+  //
+    //   name: "Poliwhirl",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/nEFTNv5.jpeg",
+  //   image: "https://i.imgur.com/nEFTNv5.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl’s has been used in place of lullabies to get children to go to sleep.",
@@ -734,10 +734,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 62,
-  //   name: "Poliwrath",
+  //
+    //   name: "Poliwrath",
   //   type: "Water, Fighting",
-  //   imageUrl: "https://i.imgur.com/dbg0shr.jpeg",
+  //   image: "https://i.imgur.com/dbg0shr.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its body is solid muscle. When swimming through cold seas, Poliwrath uses its impressive arms to smash through drift ice and plow forward.",
@@ -746,10 +746,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 63,
-  //   name: "Abra",
+  //
+    //   name: "Abra",
   //   type: "Psychic",
-  //   imageUrl: "https://i.imgur.com/CDzuaWN.jpeg",
+  //   image: "https://i.imgur.com/CDzuaWN.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon uses its psychic powers while it sleeps. The contents of Abra’s dreams affect the powers that the Pokémon wields.",
@@ -758,10 +758,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 64,
-  //   name: "Kadabra",
+  //
+    //   name: "Kadabra",
   //   type: "Psychic",
-  //   imageUrl: "https://i.imgur.com/pIgbAWm.jpeg",
+  //   image: "https://i.imgur.com/pIgbAWm.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow.",
@@ -770,10 +770,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 65,
-  //   name: "Alakazam",
+  //
+    //   name: "Alakazam",
   //   type: "Psychic",
-  //   imageUrl: "https://i.imgur.com/xlSt3tS.jpeg",
+  //   image: "https://i.imgur.com/xlSt3tS.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has an incredibly high level of intelligence. Some say that Alakazam remembers everything that ever happens to it, from birth till death.",
@@ -782,10 +782,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 66,
-  //   name: "Machop",
+  //
+    //   name: "Machop",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/PNTbgVd.jpeg",
+  //   image: "https://i.imgur.com/PNTbgVd.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its whole body is composed of muscles. Even though it’s the size of a human child, it can hurl 100 grown-ups.",
@@ -794,10 +794,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 67,
-  //   name: "Machoke",
+  //
+    //   name: "Machoke",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/jfcUfwI.jpeg",
+  //   image: "https://i.imgur.com/jfcUfwI.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions.",
@@ -806,10 +806,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 68,
-  //   name: "Machamp",
+  //
+    //   name: "Machamp",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/rnCHg0O.jpeg",
+  //   image: "https://i.imgur.com/rnCHg0O.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.",
@@ -818,10 +818,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 69,
-  //   name: "Bellsprout",
+  //
+    //   name: "Bellsprout",
   //   type: "Grass, Poison",
-  //   imageUrl: "https://i.imgur.com/Tcgxz3m.jpeg",
+  //   image: "https://i.imgur.com/Tcgxz3m.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them.",
@@ -830,10 +830,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 70,
-  //   name: "Weepinbell",
+  //
+    //   name: "Weepinbell",
   //   type: "Grass, Poison",
-  //   imageUrl: "https://i.imgur.com/hCXAyiw.jpeg",
+  //   image: "https://i.imgur.com/hCXAyiw.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids.",
@@ -842,10 +842,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 71,
-  //   name: "Victreebel",
+  //
+    //   name: "Victreebel",
   //   type: "Grass, Poison",
-  //   imageUrl: "https://i.imgur.com/EgGId1U.jpeg",
+  //   image: "https://i.imgur.com/EgGId1U.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all.",
@@ -854,10 +854,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 72,
-  //   name: "Tentacool",
+  //
+    //   name: "Tentacool",
   //   type: "Water, Poison",
-  //   imageUrl: "https://i.imgur.com/9jKJCwM.jpeg",
+  //   image: "https://i.imgur.com/9jKJCwM.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.",
@@ -866,10 +866,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 73,
-  //   name: "Tentacruel",
+  //
+    //   name: "Tentacruel",
   //   type: "Water, Poison",
-  //   imageUrl: "https://i.imgur.com/X9PslWV.jpeg",
+  //   image: "https://i.imgur.com/X9PslWV.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When the red orbs on Tentacruel’s head glow brightly, watch out. The Pokémon is about to fire off a burst of ultrasonic waves.",
@@ -878,10 +878,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 74,
-  //   name: "Geodude",
+  //
+    //   name: "Geodude",
   //   type: "Rock, Ground",
-  //   imageUrl: "https://i.imgur.com/LVAwAPc.jpeg",
+  //   image: "https://i.imgur.com/LVAwAPc.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Commonly found near mountain trails and the like. If you step on one by accident, it gets angry.",
@@ -890,10 +890,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 75,
-  //   name: "Graveler",
+  //
+    //   name: "Graveler",
   //   type: "Rock, Ground",
-  //   imageUrl: "https://i.imgur.com/iW5o9Jv.jpeg",
+  //   image: "https://i.imgur.com/iW5o9Jv.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid.",
@@ -902,10 +902,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 76,
-  //   name: "Golem",
+  //
+    //   name: "Golem",
   //   type: "Rock, Ground",
-  //   imageUrl: "https://i.imgur.com/R1T66t3.jpeg",
+  //   image: "https://i.imgur.com/R1T66t3.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it’s exposed to air.",
@@ -914,10 +914,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 77,
-  //   name: "Ponyta",
+  //
+    //   name: "Ponyta",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/rypSExt.jpeg",
+  //   image: "https://i.imgur.com/rypSExt.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It can’t run properly when it’s newly born. As it races around with others of its kind, its legs grow stronger.",
@@ -926,10 +926,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 78,
-  //   name: "Rapidash",
+  //
+    //   name: "Rapidash",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/rUiPMNV.jpeg",
+  //   image: "https://i.imgur.com/rUiPMNV.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind.",
@@ -938,10 +938,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 79,
-  //   name: "Slowpoke",
+  //
+    //   name: "Slowpoke",
   //   type: "Water, Psychic",
-  //   imageUrl: "https://i.imgur.com/Uo2gswf.jpeg",
+  //   image: "https://i.imgur.com/Uo2gswf.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Slow-witted and oblivious, this Pokémon won’t feel any pain if its tail gets eaten. It won’t notice when its tail grows back, either.",
@@ -950,10 +950,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 80,
-  //   name: "Slowbro",
+  //
+    //   name: "Slowbro",
   //   type: "Water, Psychic",
-  //   imageUrl: "https://i.imgur.com/CD7gGVx.jpeg",
+  //   image: "https://i.imgur.com/CD7gGVx.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Slowpoke became Slowbro when a Shellder bit on to its tail. Sweet flavors seeping from the tail make the Shellder feel as if its life is a dream.",
@@ -962,10 +962,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 81,
-  //   name: "Magnemite",
+  //
+    //   name: "Magnemite",
   //   type: "Electric, Steel",
-  //   imageUrl: "https://i.imgur.com/SvEC8Hh.jpeg",
+  //   image: "https://i.imgur.com/SvEC8Hh.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "At times, Magnemite runs out of electricity and ends up on the ground. If you give batteries to a grounded Magnemite, it’ll start moving again.",
@@ -974,10 +974,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 82,
-  //   name: "Magneton",
+  //
+    //   name: "Magneton",
   //   type: "Electric, Steel",
-  //   imageUrl: "https://i.imgur.com/nLjpUHM.jpeg",
+  //   image: "https://i.imgur.com/nLjpUHM.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon is three Magnemite that have linked together. Magneton sends out powerful radio waves to study its surroundings.",
@@ -986,10 +986,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 83,
-  //   name: "Farfetchd",
+  //
+    //   name: "Farfetchd",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/fSepXZj.jpeg",
+  //   image: "https://i.imgur.com/fSepXZj.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The stalk this Pokémon carries in its wings serves as a sword to cut down opponents. In a dire situation, the stalk can also serve as food.",
@@ -998,10 +998,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 84,
-  //   name: "Doduo",
+  //
+    //   name: "Doduo",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/rEXwuiw.jpeg",
+  //   image: "https://i.imgur.com/rEXwuiw.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its short wings make flying difficult. Instead, this Pokémon runs at high speed on developed legs.",
@@ -1010,10 +1010,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 85,
-  //   name: "Dodrio",
+  //
+    //   name: "Dodrio",
   //   type: "Normal, Flying",
-  //   imageUrl: "https://i.imgur.com/jVq4xar.jpeg",
+  //   image: "https://i.imgur.com/jVq4xar.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "One of Doduo’s two heads splits to form a unique species. It runs close to 40 mph in prairies.",
@@ -1022,10 +1022,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 86,
-  //   name: "Seel",
+  //
+    //   name: "Seel",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/YSMGYyu.jpeg",
+  //   image: "https://i.imgur.com/YSMGYyu.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Loves freezing-cold conditions. Relishes swimming in a frigid climate of around 14 degrees Fahrenheit.",
@@ -1034,10 +1034,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 87,
-  //   name: "Dewgong",
+  //
+    //   name: "Dewgong",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/VAJ6GtL.jpeg",
+  //   image: "https://i.imgur.com/VAJ6GtL.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters.",
@@ -1046,10 +1046,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 88,
-  //   name: "Grimer",
+  //
+    //   name: "Grimer",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/ZYrjLDV.jpeg",
+  //   image: "https://i.imgur.com/ZYrjLDV.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Made of congealed sludge. It smells too putrid to touch. Even weeds won’t grow in its path.",
@@ -1058,10 +1058,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 89,
-  //   name: "Muk",
+  //
+    //   name: "Muk",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/bAqJQf3.jpeg",
+  //   image: "https://i.imgur.com/bAqJQf3.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell.",
@@ -1070,10 +1070,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 90,
-  //   name: "Shellder",
+  //
+    //   name: "Shellder",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/jrUNlPN.jpeg",
+  //   image: "https://i.imgur.com/jrUNlPN.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It swims facing backward by opening and closing its two-piece shell. It is surprisingly fast.",
@@ -1082,10 +1082,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 91,
-  //   name: "Cloyster",
+  //
+    //   name: "Cloyster",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/8RkFQny.jpeg",
+  //   image: "https://i.imgur.com/8RkFQny.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.",
@@ -1094,10 +1094,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 92,
-  //   name: "Gastly",
+  //
+    //   name: "Gastly",
   //   type: "Ghost, Poison",
-  //   imageUrl: "https://i.imgur.com/S4vIZuQ.jpeg",
+  //   image: "https://i.imgur.com/S4vIZuQ.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
@@ -1106,10 +1106,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 93,
-  //   name: "Haunter",
+  //
+    //   name: "Haunter",
   //   type: "Ghost, Poison",
-  //   imageUrl: "https://i.imgur.com/VXDpVXj.jpeg",
+  //   image: "https://i.imgur.com/VXDpVXj.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes.",
@@ -1118,10 +1118,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 94,
-  //   name: "Gengar",
+  //
+    //   name: "Gengar",
   //   type: "Ghost, Poison",
-  //   imageUrl: "https://i.imgur.com/PtKdgyc.jpeg",
+  //   image: "https://i.imgur.com/PtKdgyc.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "On the night of a full moon, if shadows move on their own and laugh, it must be Gengar’s doing.",
@@ -1130,10 +1130,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 95,
-  //   name: "Onix",
+  //
+    //   name: "Onix",
   //   type: "Rock, Ground",
-  //   imageUrl: "https://i.imgur.com/T0G7czE.jpeg",
+  //   image: "https://i.imgur.com/T0G7czE.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid.",
@@ -1142,10 +1142,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 96,
-  //   name: "Drowzee",
+  //
+    //   name: "Drowzee",
   //   type: "Psychic",
-  //   imageUrl: "https://i.imgur.com/eIfMJwW.jpeg",
+  //   image: "https://i.imgur.com/eIfMJwW.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past.",
@@ -1154,10 +1154,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 97,
-  //   name: "Hypno",
+  //
+    //   name: "Hypno",
   //   type: "Psychic",
-  //   imageUrl: "https://i.imgur.com/VJGv6B9.jpeg",
+  //   image: "https://i.imgur.com/VJGv6B9.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum.",
@@ -1166,10 +1166,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 98,
-  //   name: "Krabby",
+  //
+    //   name: "Krabby",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/sqYPAXX.jpeg",
+  //   image: "https://i.imgur.com/sqYPAXX.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It can be found near the sea. The large pincers grow back if they are torn out of their sockets.",
@@ -1178,10 +1178,10 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 99,
-  //   name: "Kingler",
+  //
+    //   name: "Kingler",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/Nlrs71U.jpeg",
+  //   image: "https://i.imgur.com/Nlrs71U.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its large and hard pincer has 10,000-horsepower strength. However, being so big, it is unwieldy to move.",
@@ -1190,10 +1190,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 100,
+  //
+
   //   name: "Voltorb",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/lfAYoh6.jpeg",
+  //   image: "https://i.imgur.com/lfAYoh6.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus.",
@@ -1202,10 +1203,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 101,
+  //
+
   //   name: "Electrode",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/CpF1nYy.jpeg",
+  //   image: "https://i.imgur.com/CpF1nYy.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion.",
@@ -1214,10 +1216,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 102,
+  //
+
   //   name: "Exeggcute",
   //   type: "Grass, Psychic",
-  //   imageUrl: "https://i.imgur.com/xyLW37j.jpeg",
+  //   image: "https://i.imgur.com/xyLW37j.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Though it may look like it’s just a bunch of eggs, it’s a proper Pokémon. Exeggcute communicates with others of its kind via telepathy, apparently.",
@@ -1226,10 +1229,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 103,
+  //
+
   //   name: "Exeggutor",
   //   type: "Grass, Psychic",
-  //   imageUrl: "https://i.imgur.com/0ZQ1SEm.jpeg",
+  //   image: "https://i.imgur.com/0ZQ1SEm.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Each of Exeggutor’s three heads is thinking different thoughts. The three don’t seem to be very interested in one another.",
@@ -1238,10 +1242,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 104,
+  //
+
   //   name: "Cubone",
   //   type: "Ground",
-  //   imageUrl: "https://i.imgur.com/EnYNIGM.jpeg",
+  //   image: "https://i.imgur.com/EnYNIGM.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When the memory of its departed mother brings it to tears, its cries echo mournfully within the skull it wears on its head.",
@@ -1250,10 +1255,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 105,
+  //
+
   //   name: "Marowak",
   //   type: "Ground",
-  //   imageUrl: "https://i.imgur.com/To5as6p.jpeg",
+  //   image: "https://i.imgur.com/To5as6p.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.",
@@ -1262,10 +1268,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 106,
+  //
+
   //   name: "Hitmonlee",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/HzHPT7u.jpeg",
+  //   image: "https://i.imgur.com/HzHPT7u.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This amazing Pokémon has an awesome sense of balance. It can kick in succession from any position.",
@@ -1274,10 +1281,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 107,
+  //
+
   //   name: "Hitmonchan",
   //   type: "Fighting",
-  //   imageUrl: "https://i.imgur.com/ZAXu2Wc.jpeg",
+  //   image: "https://i.imgur.com/ZAXu2Wc.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.",
@@ -1286,10 +1294,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 108,
+  //
+
   //   name: "Lickitung",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/IxLzpv8.jpeg",
+  //   image: "https://i.imgur.com/IxLzpv8.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "If this Pokémon’s sticky saliva gets on you and you don’t clean it off, an intense itch will set in. The itch won’t go away, either.",
@@ -1298,10 +1307,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 109,
+  //
+
   //   name: "Koffing",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/B2NCk1x.jpeg",
+  //   image: "https://i.imgur.com/B2NCk1x.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash.",
@@ -1310,10 +1320,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 110,
+  //
+
   //   name: "Weezing",
   //   type: "Poison",
-  //   imageUrl: "https://i.imgur.com/KGavDDz.jpeg",
+  //   image: "https://i.imgur.com/KGavDDz.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It mixes gases between its two bodies. It’s said that these Pokémon were seen all over the Galar region back in the day.",
@@ -1322,10 +1333,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 111,
+  //
+
   //   name: "Rhyhorn",
   //   type: "Ground, Rock",
-  //   imageUrl: "https://i.imgur.com/FupyBEh.jpeg",
+  //   image: "https://i.imgur.com/FupyBEh.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging tackles.",
@@ -1334,10 +1346,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 112,
+  //
+
   //   name: "Rhydon",
   //   type: "Ground, Rock",
-  //   imageUrl: "https://i.imgur.com/mG2x6mn.jpeg",
+  //   image: "https://i.imgur.com/mG2x6mn.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It begins walking on its hind legs after evolution. It can punch holes through boulders with its horn.",
@@ -1346,10 +1359,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 113,
+  //
+
   //   name: "Chansey",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/j6lYURt.jpeg",
+  //   image: "https://i.imgur.com/j6lYURt.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The egg Chansey carries is not only delicious but also packed with nutrition. It’s used as a high-class cooking ingredient.",
@@ -1358,10 +1372,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 114,
+  //
+
   //   name: "Tangela",
   //   type: "Grass",
-  //   imageUrl: "https://i.imgur.com/d0pH3jJ.jpeg",
+  //   image: "https://i.imgur.com/d0pH3jJ.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon’s true appearance remains a mystery.",
@@ -1370,10 +1385,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 115,
+  //
+
   //   name: "Kangaskhan",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/WCBM60l.jpeg",
+  //   image: "https://i.imgur.com/WCBM60l.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Although it’s carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs.",
@@ -1382,10 +1398,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 116,
+  //
+
   //   name: "Horsea",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/hPJDz9s.jpeg",
+  //   image: "https://i.imgur.com/hPJDz9s.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes.",
@@ -1394,10 +1411,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 117,
+  //
+
   //   name: "Seadra",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/0sBpEWn.jpeg",
+  //   image: "https://i.imgur.com/0sBpEWn.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It’s the males that raise the offspring. While Seadra are raising young, the spines on their backs secrete thicker and stronger poison.",
@@ -1406,10 +1424,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 118,
+  //
+
   //   name: "Goldeen",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/sjD6jjp.jpeg",
+  //   image: "https://i.imgur.com/sjD6jjp.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Its dorsal, pectoral, and tail fins wave elegantly in water. That is why it is known as the Water Dancer.",
@@ -1418,10 +1437,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 119,
+  //
+
   //   name: "Seaking",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/jSwRMPu.jpeg",
+  //   image: "https://i.imgur.com/jSwRMPu.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "In autumn, its body becomes more fatty in preparing to propose to a mate. It takes on beautiful colors.",
@@ -1430,10 +1450,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 120,
+  //
+
   //   name: "Staryu",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/MJ4Tq3S.jpeg",
+  //   image: "https://i.imgur.com/MJ4Tq3S.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "If you visit a beach at the end of summer, you’ll be able to see groups of Staryu lighting up in a steady rhythm.",
@@ -1442,10 +1463,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 121,
+  //
+
   //   name: "Starmie",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/IwyMpFo.jpeg",
+  //   image: "https://i.imgur.com/IwyMpFo.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon has an organ known as its core. The organ glows in seven colors when Starmie is unleashing its potent psychic powers.",
@@ -1454,10 +1476,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 122,
+  //
+
   //   name: "Mr. Mime",
   //   type: "Psychic, Fairy",
-  //   imageUrl: "https://i.imgur.com/AolSJTf.jpeg",
+  //   image: "https://i.imgur.com/AolSJTf.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "The broadness of its hands may be no coincidence—many scientists believe its palms became enlarged specifically for pantomiming.",
@@ -1466,10 +1489,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 123,
+  //
+
   //   name: "Scyther",
   //   type: "Bug, Flying",
-  //   imageUrl: "https://i.imgur.com/ETgwGYK.jpeg",
+  //   image: "https://i.imgur.com/ETgwGYK.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "As Scyther fights more and more battles, its scythes become sharper and sharper. With a single slice, Scyther can fell a massive tree.",
@@ -1478,10 +1502,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 124,
+  //
+
   //   name: "Jynx",
   //   type: "Ice, Psychic",
-  //   imageUrl: "https://i.imgur.com/2DK6aEu.jpeg",
+  //   image: "https://i.imgur.com/2DK6aEu.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice.",
@@ -1490,10 +1515,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 125,
+  //
+
   //   name: "Electabuzz",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/VTlw60a.jpeg",
+  //   image: "https://i.imgur.com/VTlw60a.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Many power plants keep Ground-type Pokémon around as a defense against Electabuzz that come seeking electricity.",
@@ -1502,10 +1528,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 126,
+  //
+
   //   name: "Magmar",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/5Fu8RcL.jpeg",
+  //   image: "https://i.imgur.com/5Fu8RcL.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Magmar dispatches its prey with fire. But it regrets this habit once it realizes that it has burned its intended prey to a charred crisp.",
@@ -1514,10 +1541,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 127,
+  //
+
   //   name: "Pinsir",
   //   type: "Bug",
-  //   imageUrl: "https://i.imgur.com/Orx7o0E.jpeg",
+  //   image: "https://i.imgur.com/Orx7o0E.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "These Pokémon judge one another based on pincers. Thicker, more impressive pincers make for more popularity with the opposite gender.",
@@ -1526,10 +1554,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 128,
+  //
+
   //   name: "Tauros",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/3cC6rPn.jpeg",
+  //   image: "https://i.imgur.com/3cC6rPn.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When Tauros begins whipping itself with its tails, it’s a warning that the Pokémon is about to charge with astounding speed.",
@@ -1538,10 +1567,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 129,
+  //
+
   //   name: "Magikarp",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/nbxoMDn.jpeg",
+  //   image: "https://i.imgur.com/nbxoMDn.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world.",
@@ -1550,10 +1580,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 130,
+  //
+
   //   name: "Gyarados",
   //   type: "Water, Flying",
-  //   imageUrl: "https://i.imgur.com/YRrbP9f.jpeg",
+  //   image: "https://i.imgur.com/YRrbP9f.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets.",
@@ -1562,10 +1593,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 131,
+  //
+
   //   name: "Lapras",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/w87ZZ80.jpeg",
+  //   image: "https://i.imgur.com/w87ZZ80.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it.",
@@ -1574,10 +1606,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 132,
+  //
+
   //   name: "Ditto",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/juGlzg0.jpeg",
+  //   image: "https://i.imgur.com/juGlzg0.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
@@ -1586,10 +1619,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 133,
+  //
+
   //   name: "Eevee",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/7uoeLgG.jpeg",
+  //   image: "https://i.imgur.com/7uoeLgG.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It has the ability to alter the composition of its body to suit its surrounding environment.",
@@ -1598,10 +1632,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 134,
+  //
+
   //   name: "Vaporeon",
   //   type: "Water",
-  //   imageUrl: "https://i.imgur.com/FprzdCt.jpeg",
+  //   image: "https://i.imgur.com/FprzdCt.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours.",
@@ -1610,10 +1645,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 135,
+  //
+
   //   name: "Jolteon",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/mNNnCkS.jpeg",
+  //   image: "https://i.imgur.com/mNNnCkS.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "If it is angered or startled, the fur all over its body bristles like sharp needles that pierce foes.",
@@ -1622,10 +1658,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 136,
+  //
+
   //   name: "Flareon",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/PTVe3TB.jpeg",
+  //   image: "https://i.imgur.com/PTVe3TB.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Once it has stored up enough heat, this Pokémon’s body temperature can reach up to 1,700 degrees Fahrenheit.",
@@ -1634,10 +1671,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 137,
+  //
+
   //   name: "Porygon",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/KyQyCdv.jpeg",
+  //   image: "https://i.imgur.com/KyQyCdv.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "State-of-the-art technology was used to create Porygon. It was the first artificial Pokémon to be created via computer programming.",
@@ -1646,10 +1684,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 138,
+  //
+
   //   name: "Omanyte",
   //   type: "Rock, Water",
-  //   imageUrl: "https://i.imgur.com/4RFzPj9.jpeg",
+  //   image: "https://i.imgur.com/4RFzPj9.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Because some Omanyte manage to escape after being restored or are released into the wild by people, this species is becoming a problem.",
@@ -1658,10 +1697,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 139,
+  //
+
   //   name: "Omastar",
   //   type: "Rock, Water",
-  //   imageUrl: "https://i.imgur.com/yge9fQI.jpeg",
+  //   image: "https://i.imgur.com/yge9fQI.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Weighed down by a large and heavy shell, Omastar couldn’t move very fast. Some say it went extinct because it was unable to catch food.",
@@ -1670,10 +1710,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 140,
+  //
+
   //   name: "Kabuto",
   //   type: "Rock, Water",
-  //   imageUrl: "https://i.imgur.com/lUDnrk6.jpeg",
+  //   image: "https://i.imgur.com/lUDnrk6.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This species is almost entirely extinct. Kabuto molt every three days, making their shells harder and harder.",
@@ -1682,10 +1723,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 141,
+  //
+
   //   name: "Kabutops",
   //   type: "Rock, Water",
-  //   imageUrl: "https://i.imgur.com/TcwiOvv.jpeg",
+  //   image: "https://i.imgur.com/TcwiOvv.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Kabutops slices its prey apart and sucks out the fluids. The discarded body parts become food for other Pokémon.",
@@ -1694,10 +1736,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 142,
+  //
+
   //   name: "Aerodactyl",
   //   type: "Rock, Flying",
-  //   imageUrl: "https://i.imgur.com/oW0ZxfW.jpeg",
+  //   image: "https://i.imgur.com/oW0ZxfW.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen.",
@@ -1706,10 +1749,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 143,
+  //
+
   //   name: "Snorlax",
   //   type: "Normal",
-  //   imageUrl: "https://i.imgur.com/Hlwaziz.jpeg",
+  //   image: "https://i.imgur.com/Hlwaziz.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep.",
@@ -1718,10 +1762,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 144,
+  //
+
   //   name: "Articuno",
   //   type: "Ice, Flying",
-  //   imageUrl: "https://i.imgur.com/EREOJBj.jpeg",
+  //   image: "https://i.imgur.com/EREOJBj.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.",
@@ -1730,10 +1775,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 145,
+  //
+
   //   name: "Zapdos",
   //   type: "Electric",
-  //   imageUrl: "https://i.imgur.com/BwXCCKJ.jpeg",
+  //   image: "https://i.imgur.com/BwXCCKJ.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds.",
@@ -1742,10 +1788,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 146,
+  //
+
   //   name: "Moltres",
   //   type: "Fire",
-  //   imageUrl: "https://i.imgur.com/9h9f44p.jpeg",
+  //   image: "https://i.imgur.com/9h9f44p.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow.",
@@ -1754,10 +1801,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 147,
+  //
+
   //   name: "Dratini",
   //   type: "Dragon",
-  //   imageUrl: "https://i.imgur.com/KRlqWJE.jpeg",
+  //   image: "https://i.imgur.com/KRlqWJE.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times.",
@@ -1766,10 +1814,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 148,
+  //
+
   //   name: "Dragonair",
   //   type: "Dragon",
-  //   imageUrl: "https://i.imgur.com/5VoV8es.jpeg",
+  //   image: "https://i.imgur.com/5VoV8es.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind.",
@@ -1778,10 +1827,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 149,
+  //
+
   //   name: "Dragonite",
   //   type: "Dragon",
-  //   imageUrl: "https://i.imgur.com/5iLnel4.jpeg",
+  //   image: "https://i.imgur.com/5iLnel4.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them.",
@@ -1790,10 +1840,11 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
   // {
-  //   _id: 150,
+  //
+
   //   name: "Mewtwo",
   //   type: "Psychic",
-  //   imageUrl: "https://i.imgur.com/iFop2sr.jpeg",
+  //   image: "https://i.imgur.com/iFop2sr.jpeg",
   //   price: (Math.floor(Math.random() * 100000) / 100).toFixed(2),
   //   description:
   //     "ts DNA is almost the same as Mew’s. However, its size and disposition are vastly different.",
@@ -1802,4 +1853,4 @@ const pokemonArr = [
   //   numReviews: Math.ceil(Math.random() * 20),
   // },
 ];
-module.exports = pokemonArr;
+export default pokemonArr
