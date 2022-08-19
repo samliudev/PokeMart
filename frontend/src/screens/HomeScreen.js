@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
+import axios from "axios";
 import Product from "../components/Product";
-import pokeData from "../pokeData";
 
 const HomeScreen = () => {
+  const [pokeData, setPokeData] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { data } = await axios.get("/api/products");
+      setPokeData(data);
+    };
+    fetchProducts();
+  }, []);
+
   return (
     <>
       <h1>Latest Products</h1>

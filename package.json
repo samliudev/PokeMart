@@ -1,0 +1,14 @@
+{
+  "name": "pokemart",
+  "version": "1.0.0",
+  "description": "MERN PokeMart",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server"
+  },
+  "author": "Samuel Liu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

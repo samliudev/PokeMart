@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
+import axios from "axios";
 import Rating from "../components/Rating";
-import pokemon from "../pokeData";
 
 const ProductScreen = () => {
   const { id } = useParams();
-  const product = pokemon.find((p) => p._id === Number(id));
+  const [pokeData, setPokeData] = useState({});
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${id}`);
+      setPokeData(data);
+    };
+    fetchProduct();
+  }, []);
+
   return (
     <>
       <Link className="btn btn-light my-3" to="/">
@@ -14,21 +23,21 @@ const ProductScreen = () => {
       </Link>
       <Row>
         <Col md={6}>
-          <Image src={product.imageUrl} alt={product.name} fluid />
+          <Image src={pokeData.imageUrl} alt={pokeData.name} fluid />
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <h3>{product.name}</h3>
+              <h3>{pokeData.name}</h3>
             </ListGroup.Item>
             <ListGroup.Item>
               <Rating
-                value={product.rating}
-                text={`${product.numReviews} review(s)`}
+                value={pokeData.rating}
+                text={`${pokeData.numReviews} review(s)`}
               />
             </ListGroup.Item>
-            <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-            <ListGroup.Item>Description: {product.description}</ListGroup.Item>
+            <ListGroup.Item>Price: ${pokeData.price}</ListGroup.Item>
+            <ListGroup.Item>Description: {pokeData.description}</ListGroup.Item>
           </ListGroup>
         </Col>
         <Col md={3}>
@@ -38,7 +47,7 @@ const ProductScreen = () => {
                 <Row>
                   <Col>Price:</Col>
                   <Col>
-                    <strong>${product.price}</strong>
+                    <strong>${pokeData.price}</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
@@ -46,16 +55,16 @@ const ProductScreen = () => {
                 <Row>
                   <Col>Status:</Col>
                   <Col>
-                    {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                    {pokeData.countInStock > 0 ? "In Stock" : "Out of Stock"}
                   </Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                <div class="d-grid gap-2">
+                <div className="d-grid gap-2">
                   <Button
                     className="btn btn-info"
                     type="button"
-                    disabled={product.countInStock === 0}
+                    disabled={pokeData.countInStock === 0}
                   >
                     Add To Cart
                   </Button>
