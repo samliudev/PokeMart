@@ -35,7 +35,7 @@ const CartScreen = () => {
 
   const checkoutHandler = () => {
     // if logged in, shipping, else login page
-    navigate("/login?redirect=shipping");
+    navigate("/login?redirect=/shipping");
   };
 
   return (
