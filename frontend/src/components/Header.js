@@ -18,7 +18,16 @@ const Header = () => {
       <Navbar bg="info" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>PokeMart</Navbar.Brand>
+            <Navbar.Brand>
+              <img
+                src="/pokemart.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+              />{" "}
+              PokeMart
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
