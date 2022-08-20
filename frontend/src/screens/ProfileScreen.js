@@ -100,7 +100,7 @@ const ProfileScreen = () => {
 
           <Row className="py-3">
             <Col>
-              <Button type="submit" variant="primary">
+              <Button type="submit" variant="info">
                 Update
               </Button>
             </Col>

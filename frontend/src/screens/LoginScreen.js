@@ -57,7 +57,7 @@ const LoginScreen = () => {
 
         <Row className="py-3">
           <Col>
-            <Button type="submit" variant="primary">
+            <Button type="submit" variant="info">
               Sign In
             </Button>
           </Col>
