@@ -20,13 +20,13 @@ const Header = () => {
           <LinkContainer to="/">
             <Navbar.Brand>
               <img
-                src="/pokemart.png"
+                src="/pokecenter.png"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
-                alt="React Bootstrap logo"
+                alt="PokeMart Logo"
               />{" "}
-              PokeMart
+              PokeMart{" "}
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
