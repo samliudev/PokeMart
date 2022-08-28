@@ -1,1 +1,6 @@
-Hello there! Welcome to the ecommerce site PokeMart! My name is Sam! People call me the pokémon Prof! PokeMart is stocked with pokemon cards! For some people, pokémon are pets. Others use them for fights. Myself...I just want to catch 'em all.
+Hello there!
+Welcome to the ecommerce site PokéMart!
+My name is Sam! People call me the Pokémon Prof!
+PokeMart is stocked with cards full of wonderful creatures called Pokémon!
+For some people, Pokémon are pets. Others use them for fights.
+Myself...I just want to catch 'em all.

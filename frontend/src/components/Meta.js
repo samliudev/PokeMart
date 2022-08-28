@@ -12,7 +12,7 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "Welcome to PokeMart",
+  title: "Welcome to PokéMart",
   description: "Gotta Catch 'em All",
   keywords: "pokemon, pokemon cards, pokemart",
 };

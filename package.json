@@ -1,7 +1,7 @@
 {
-  "name": "pokemart",
+  "name": "PokéMart",
   "version": "1.0.0",
-  "description": "MERN PokeMart",
+  "description": "MERN PokéMart",
   "main": "server.js",
   "type": "module",
   "scripts": {
