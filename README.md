@@ -13,6 +13,7 @@ Myself...I just want to catch 'em all.
 
 
 Check out the live site at: https://pokemart-snl.herokuapp.com/
+
 Admin email: oak@pokemart.com
 Admin pw: 1234
 
