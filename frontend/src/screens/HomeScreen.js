@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
@@ -7,6 +8,7 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Paginate from "../components/Paginate";
 import ProductCarousel from "../components/ProductCarousel";
+import Meta from "../components/Meta";
 import { listProducts } from "../actions/productActions";
 
 const HomeScreen = () => {
@@ -23,8 +25,15 @@ const HomeScreen = () => {
 
   return (
     <>
-     {/* Will not show carousel if user has searched for a keyword */}
-    {!keyword && <ProductCarousel />  }
+      <Meta />
+      {/* Will not show carousel if user has searched for a keyword */}
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to="/" className="btn btn-light">
+          Go Back
+        </Link>
+      )}
       <h1>Latest Products</h1>
       {/* if loading, loading, else error, else products list */}
       {loading ? (
