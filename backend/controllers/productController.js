@@ -6,14 +6,21 @@ import Product from "../models/productModel.js";
 // *** req.query => GET /api/products?keyword=${keyword}
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
+  const pageSize = 12;
+  const page = Number(req.query.pageNumber) || 1;
   const keyword = req.query.keyword
     ? {
         name: { $regex: req.query.keyword, $options: "i" },
       }
     : {};
 
-  const products = await Product.find({ ...keyword });
-  res.json(products);
+  const count = await Product.countDocuments({ ...keyword });
+
+  // GETs the products for each page
+  const products = await Product.find({ ...keyword })
+    .limit(pageSize)
+    .skip(pageSize * (page - 1));
+  res.json({ products, page, pages: Math.ceil(count / pageSize) });
 });
 
 // @desc    Fetch single product
@@ -86,7 +93,7 @@ const updateProduct = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc    Create new reivew
+// @desc    Create new review
 // @route   POST /api/products/:id/reviews
 // @access  Private
 const createProductReview = asyncHandler(async (req, res) => {
@@ -122,6 +129,14 @@ const createProductReview = asyncHandler(async (req, res) => {
   }
 });
 
+// @desc    Get top rated products
+// @route   GET /api/products/top
+// @access  Public
+const getTopProducts = asyncHandler(async (req, res) => {
+  const products = await Product.find({}).sort({ rating: -1 }).limit(6);
+  res.json(products);
+});
+
 export {
   getProductById,
   getProducts,
@@ -129,4 +144,5 @@ export {
   createProduct,
   updateProduct,
   createProductReview,
+  getTopProducts,
 };
