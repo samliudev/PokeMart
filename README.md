@@ -11,3 +11,7 @@ Admin Password: 1234
 User Email: ash@pokemart.com
 
 User Password: 1234
+
+Sandbox PayPal Email: sb-p47whc20377220@personal.example.com
+
+Sandbox PayPal Password: x*H;M.f7
