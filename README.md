@@ -1,4 +1,4 @@
-Check out the live site at: https://pokemart-snl.herokuapp.com/
+Check out the live site at: https://pokemart.onrender.com/
 
 Description: Anonymous users can add items to their shopping cart, which is persisted in local storage. Users can login and "purchase" products using a sandboxed PayPal account. Admins will be able to manage users and products. 
 
